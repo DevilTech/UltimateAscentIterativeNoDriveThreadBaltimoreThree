@@ -68,6 +68,7 @@ public class ClimbingSystem
         } 
         catch (CANTimeoutException ex) 
         {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();
         }
     }
@@ -180,6 +181,7 @@ public class ClimbingSystem
         }
         catch (CANTimeoutException ex) 
         {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();
         }
     }
@@ -244,6 +246,7 @@ public class ClimbingSystem
         } 
         catch (CANTimeoutException ex) 
         {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();
         }
     }
@@ -317,6 +320,7 @@ public class ClimbingSystem
         }
         catch (CANTimeoutException ex)
         {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();
         }
     }
@@ -361,6 +365,7 @@ public class ClimbingSystem
         } 
         catch (CANTimeoutException ex) 
         {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();
         }
         return hitbar;
@@ -377,6 +382,7 @@ public class ClimbingSystem
             winch2.setX(0.0, sg);
             winch.updateSyncGroup(sg);
         } catch (CANTimeoutException ex) {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();
         }
     }
@@ -421,6 +427,7 @@ public class ClimbingSystem
                 } 
                 catch (CANTimeoutException ex) 
                 {
+                    SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
                     ex.printStackTrace();
                 }
                
@@ -480,6 +487,7 @@ public class ClimbingSystem
                 } 
                 catch (CANTimeoutException ex) 
                 {
+                    SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
                     ex.printStackTrace();
                 }
                 if(robo.shouldAbort())
@@ -510,6 +518,7 @@ public class ClimbingSystem
                 } 
                 catch (CANTimeoutException ex) 
                 {
+                    SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
                     ex.printStackTrace();
                 }
                 if(robo.shouldAbort())
@@ -538,6 +547,7 @@ public class ClimbingSystem
                 } 
                 catch (CANTimeoutException ex) 
                 {
+                    SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
                     ex.printStackTrace();
                 }
                 if(robo.shouldAbort())
@@ -567,6 +577,7 @@ public class ClimbingSystem
                 } 
                 catch (CANTimeoutException ex) 
                 {
+                    SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
                     ex.printStackTrace();
                 }
                 if(robo.shouldAbort())

@@ -20,6 +20,7 @@ public class Shooter
             shoot = new CANJaguar(port);
             shoot.setVoltageRampRate(Wiring.RAMP_VOLTS_PER_SECOND);
         } catch (CANTimeoutException ex) {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();
         }
     }
@@ -34,6 +35,7 @@ public class Shooter
         }
         catch (CANTimeoutException ex)
         {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();
         }
         try 
@@ -49,6 +51,7 @@ public class Shooter
             }
         } 
         catch (CANTimeoutException ex) {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();
         }
     }
@@ -61,6 +64,7 @@ public class Shooter
             atMax = false;
             SmartDashboard.putBoolean("Shooter Up To Speed", false);
         } catch (CANTimeoutException ex) {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();
         }
     }

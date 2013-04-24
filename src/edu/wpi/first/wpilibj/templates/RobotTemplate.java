@@ -123,6 +123,7 @@ public class RobotTemplate extends IterativeRobot
         } 
         catch (CANTimeoutException ex) 
         {
+            SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
             ex.printStackTrace();  //JAG CHANGE
         }
     }
@@ -174,6 +175,7 @@ public class RobotTemplate extends IterativeRobot
                     climb.winch2.setX(.75, sg);
                     climb.winch.updateSyncGroup(sg);
                 } catch (CANTimeoutException ex) {
+                    SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
                     ex.printStackTrace();
                 }
           /////////////well commented     
@@ -199,6 +201,7 @@ public class RobotTemplate extends IterativeRobot
                     rightMotor.setX(-.75);
                     leftMotor.setX(-.75);
                 } catch (CANTimeoutException ex) {
+                    SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
                     ex.printStackTrace();
                 }
                 Timer.delay(Wiring.TURN_DELAY);
@@ -210,6 +213,7 @@ public class RobotTemplate extends IterativeRobot
                     rightMotor.setX(.75);
                     leftMotor.setX(.75);
                 } catch (CANTimeoutException ex) {
+                    SmartDashboard.putString("Error Table Flip", "CAN TIMEOUT");
                     ex.printStackTrace();
                 }
                 Timer.delay(Wiring.TURN_DELAY);
